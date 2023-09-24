@@ -9,8 +9,8 @@
 			| TEA Stack</title>
 	</head>
 
-	<body class="{{ env.devMode ? 'debug-screens' }} bg-yellow-100">
-		{% include 'header.twig' %}
+	<body class="{{ env.devMode ? 'debug-screens' }} bg-yellow-100 grid grid-cols-4">
+		{% include 'sideNav.twig' %}
 		{% block body %}
 			{{ content|raw }}
 		{% endblock %}
